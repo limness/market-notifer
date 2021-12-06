@@ -5,6 +5,8 @@ from aiogram import executor
 from handlers import *
 from dispatcher import dp
 
+from websocket import launch
+
 
 ##################
 

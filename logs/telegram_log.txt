@@ -68,3 +68,13 @@ Traceback (most recent call last):
   File "E:\OpenServer\domains\interview-test-task\handlers.py", line 81, in cmd_get_top
     await launch()
 TypeError: launch() missing 1 required positional argument: 'loop'
+INFO:aiogram:Bot: Parser [@parser_task_bot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: Parser [@parser_task_bot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.
+INFO:aiogram.dispatcher.dispatcher:Stop polling...
+WARNING:aiogram:Goodbye!
+INFO:aiogram:Bot: Parser [@parser_task_bot]
+INFO:aiogram.dispatcher.dispatcher:Start polling.

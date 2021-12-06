@@ -66,9 +66,10 @@ async def cmd_get_top(message: types.Message):
         answer = "<b>🔸 В ближайшее время ты начнешь получать уведомления</b> "
         answer += "Используй повторно команду /get_top для отключения пуша уведомлений"
     else:
-        answer = "<b>🔺 Ты отключил пуш уведомлений, теперь можешь спать спокойно</b> "
+        answer = "<b>🔺 Ты отключил пуш уведомлений, теперь можешь спать спокойно.</b> "
         answer += "Однако с этого момента придется самому следить за движением цены"
 
+    Settings.user_id = message.from_user.id
     Settings.get_top_alert = not Settings.get_top_alert
 
     await bot.send_message(
@@ -100,7 +101,7 @@ async def cmd_form_graphic(message: types.Message):
     # Generate general information and output it to the user
     ticker = await get_ticker(arguments[0])
     answer = f"Информация по <b>{arguments[0]}</b> за последние сутки:\n\n"
-    answer += f"Текущая цена: <b>{round(float(ticker['bidPrice']), 2)} USDT</b> 📌\n"
+    answer += f"Текущая цена: <b>{round(float(ticker['bidPrice']), 2)}</b> 📌\n"
     answer += f"Дельта изменения: <b>{round(float(ticker['priceChangePercent']), 2)}%</b>\n"
     answer += f"Общий объем: <b>{round(float(ticker['volume']), 2)} BTC</b>\n\n"
     answer += "📊 Более подробную информацию <b>по изменению цены</b>\n"

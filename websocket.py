@@ -62,7 +62,7 @@ async def consumer_handler(ws):
             answer += f"Пора открывать новый ордер на покупку!"
 
             await bot.send_message(
-                      chat_id = 867690422,
+                      chat_id = Settings.user_id,
                       text = answer,
                       parse_mode = ParseMode.HTML,
                   )
