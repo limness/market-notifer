@@ -5,3 +5,6 @@ __pycache__/
 
 # Ignore all files ending with .xlsx
 **.xlsx
+
+# Ignore all logs ending with .txt
+/logs/**.txt
