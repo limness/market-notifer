@@ -1,4 +1,4 @@
-# interview-test-task
+# Binance Market Notifer
 
 __Binance Bot__ — Telegram Bot for spot trading on the Binance exchange with the ability to output the final data in `XLS/XLSX` format
 
